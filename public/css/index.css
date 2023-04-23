@@ -1,7 +1,44 @@
-html {
-  max-width: 720px;
+:root {
+  background: #fff;
 }
 
-body {
-  background: #fff;
+* {
+  color: darkorange;
+}
+
+h1 {
+  color: darkblue;
+}
+
+.class {
+  color: darkgreen;
+}
+
+#id {
+  color: purple;
+}
+
+h1, h4, .class, #id {
+  background: lightblue;
+}
+
+div.div#div {
+  background: lightcoral;
+}
+
+main > div {
+  color: black;
+  background: yellow;
+}
+
+main em {
+  background: darkmagenta;
+}
+
+h5 + p {
+  background: #000;
+}
+
+h6 ~ p {
+  background: #000;
 }
