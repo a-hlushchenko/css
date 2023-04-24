@@ -26,7 +26,7 @@ div.div#div {
   background: lightcoral;
 }
 
-main > div {
+main > div.divyel {
   color: black;
   background: yellow;
 }
@@ -36,9 +36,69 @@ main em {
 }
 
 h5 + p {
-  background: #000;
+  background: lightgreen;
 }
 
 h6 ~ p {
+  background: lightslategray;
+}
+
+li:first-child {
+  color: green;
+}
+
+li:last-child {
+  color: blue;
+}
+
+div:only-child {
+  color: lightskyblue;
+}
+
+.child:first-of-type {
+  color: blue;
+}
+
+.child:last-of-type {
+  color: blue;
+}
+
+span:only-of-type {
+  color:black;
+}
+
+.father > *:nth-child(5) {
+  color: blueviolet;
+}
+
+парні дитячі теги
+.child:nth-child(even) {
+  color: green;
+}
+
+непарні дитячі теги
+.child:nth-child(odd) {
+  color: green;
+}
+
+дитячий тег з кінця
+.child:nth-last-child(3) {
+  color: green;
+}
+
+.child:nth-of-type(3) {
+  color: green;
+}
+
+.child:nth-last-of-type(3) {
+  color: green;
+}
+
+p:not(.child) {
+  color: blue;
+}
+
+p:empty {
   background: #000;
+  height: 10px;
 }
