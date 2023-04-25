@@ -1,4 +1,4 @@
-:root {
+/* :root {
   background: #fff;
 }
 
@@ -71,17 +71,14 @@ span:only-of-type {
   color: blueviolet;
 }
 
-парні дитячі теги
 .child:nth-child(even) {
   color: green;
 }
 
-непарні дитячі теги
 .child:nth-child(odd) {
   color: green;
 }
 
-дитячий тег з кінця
 .child:nth-last-child(3) {
   color: green;
 }
@@ -101,4 +98,71 @@ p:not(.child) {
 p:empty {
   background: #000;
   height: 10px;
+} */
+
+.card {
+  background: #ededed;
+  margin: 50px;
+  padding: 50px;
+}
+
+.input {
+  border-color: darkblue;
+}
+
+input:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+input[required] {
+  border-color: darkorange;
+}
+
+input[type='number'] {
+  border-color: green;
+}
+
+img[alt~=small] {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+button[class|='button'] {
+  background: skyblue;
+}
+
+button[class^='button'] {
+  background: skyblue;
+}
+
+button {
+  background: skyblue;
+}
+
+button[class$='button'] {
+background: skyblue;
+}
+
+div::first-letter {
+  color: red;
+}
+
+p::first-line {
+  color: red;
+}
+
+input::placeholder,
+input[placeholder] {
+  color: yellow;
+  background: green;
+}
+
+q::before {
+  content: '@#$ ';
+  color: red;
+}
+
+q::after {
+  content: '@#$ ';
+  color: red;
 }
