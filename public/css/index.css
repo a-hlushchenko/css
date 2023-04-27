@@ -166,3 +166,86 @@ q::after {
   content: '@#$ ';
   color: red;
 }
+
+
+/* не повна підтримка */
+
+:any-link {
+  background: brown;
+}
+
+:dir(rtl) {
+font-family: serif;
+}
+
+:fullscreen {
+  font-style: 30px;
+}
+
+:current(p) {
+  color: darkblue;
+}
+
+:future(p) {
+  display: none;
+}
+
+:past(p) {
+  display: none;
+}
+
+:host-context(p) {
+  background: bisque;
+}
+
+h2:has(b) {
+  color: blue;
+}
+
+@page:left {
+  background: red;
+}
+
+@page:right {
+  background: red;
+}
+
+@page:first {
+  background: red;
+}
+
+:picture-in-picture {
+  border-radius: 10px;
+}
+
+:playing {
+  border-radius: 10px;
+}
+
+:paused {
+  border-radius: 10px;
+}
+
+:scope {
+  background: #efefef;
+}
+
+:defined {
+  color: darkviolet;
+}
+
+::selection {
+  background: greenyellow;
+}
+
+input:indeterminate {
+  background: lime;
+}
+
+input:default {
+  background: blue;
+}
+
+element(p) {
+  color: blue;
+}
