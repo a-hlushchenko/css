@@ -1,0 +1,342 @@
+:root {
+  background: #fff;
+}
+
+* {
+  color: darkorange;
+}
+
+h1 {
+  color: darkblue;
+}
+
+.class {
+  color: darkgreen;
+}
+
+#id {
+  color: purple;
+}
+
+h1, h4, .class, #id {
+  background: lightblue;
+}
+
+div.div#div {
+  background: lightcoral;
+}
+
+main > div.divyel {
+  color: black;
+  background: yellow;
+}
+
+main em {
+  background: darkmagenta;
+}
+
+h5 + p {
+  background: lightgreen;
+}
+
+h6 ~ p {
+  background: lightslategray;
+}
+
+li:first-child {
+  color: green;
+}
+
+li:last-child {
+  color: blue;
+}
+
+div:only-child {
+  color: lightskyblue;
+}
+
+.child:first-of-type {
+  color: blue;
+}
+
+.child:last-of-type {
+  color: blue;
+}
+
+span:only-of-type {
+  color:black;
+}
+
+.father > *:nth-child(5) {
+  color: blueviolet;
+}
+
+.child:nth-child(even) {
+  color: green;
+}
+
+.child:nth-child(odd) {
+  color: green;
+}
+
+.child:nth-last-child(3) {
+  color: green;
+}
+
+.child:nth-of-type(3) {
+  color: green;
+}
+
+.child:nth-last-of-type(3) {
+  color: green;
+}
+
+p:not(.child) {
+  color: blue;
+}
+
+p:empty {
+  background: #000;
+  height: 10px;
+}
+
+.card {
+  background: #ededed;
+  margin: 50px;
+  padding: 50px;
+}
+
+.input {
+  border-color: darkblue;
+}
+
+input:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+input[required] {
+  border-color: darkorange;
+}
+
+input[type='number'] {
+  border-color: green;
+}
+
+img[alt~=small] {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+button[class|='button'] {
+  background: skyblue;
+}
+
+button[class^='button'] {
+  background: skyblue;
+}
+
+button {
+  background: skyblue;
+}
+
+button[class$='button'] {
+background: skyblue;
+}
+
+div::first-letter {
+  color: red;
+}
+
+p::first-line {
+  color: red;
+}
+
+input::placeholder,
+input[placeholder] {
+  color: yellow;
+  background: green;
+}
+
+q::before {
+  content: '@#$ ';
+  color: red;
+}
+
+q::after {
+  content: '@#$ ';
+  color: red;
+}
+
+
+не повна підтримка
+
+:any-link {
+  background: brown;
+}
+
+:dir(rtl) {
+font-family: serif;
+}
+
+:fullscreen {
+  font-style: 30px;
+}
+
+:current(p) {
+  color: darkblue;
+}
+
+:future(p) {
+  display: none;
+}
+
+:past(p) {
+  display: none;
+}
+
+:host-context(p) {
+  background: bisque;
+}
+
+h2:has(b) {
+  color: blue;
+}
+
+@page:left {
+  background: red;
+}
+
+@page:right {
+  background: red;
+}
+
+@page:first {
+  background: red;
+}
+
+:picture-in-picture {
+  border-radius: 10px;
+}
+
+:playing {
+  border-radius: 10px;
+}
+
+:paused {
+  border-radius: 10px;
+}
+
+:scope {
+  background: #efefef;
+}
+
+:defined {
+  color: darkviolet;
+}
+
+::selection {
+  background: greenyellow;
+}
+
+input:indeterminate {
+  background: lime;
+}
+
+input:default {
+  background: blue;
+}
+
+:element(p) {
+  color: blue;
+}
+
+ .card {
+  margin: 40px;
+  padding: 30px;
+  background: #ededed;
+}
+
+#a:target {
+  background: purple;
+}
+
+a:link {
+  color: purple;
+}
+
+.card:hover {
+  background: blueviolet;
+}
+
+.card:active {
+  background: orangered;
+}
+
+p:hover {
+  color: white;
+}
+
+input, button {
+  border-radius: 10px;
+  background: violet;
+  line-height: 30px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+input:focus {
+  background: skyblue;
+}
+
+form:focus-within {
+  background: bisque;
+}
+
+p:lang(en) {
+  color: skyblue;
+}
+
+button:enabled {
+  background: green;
+}
+
+button:disabled {
+  background: grey;
+}
+
+input:read-write {
+  background: rosybrown;
+}
+
+input:read-only {
+  background: goldenrod;
+}
+
+input:checked ~ label {
+  background: skyblue;
+}
+
+input:valid {
+  background: rgb(0, 215, 0);
+}
+
+input:invalid {
+  background: rgb(236, 51, 51);
+}
+
+input:optional {
+  background: green;
+}
+
+input:out-of-range {
+  background: red;
+}
+
+input:in-range {
+  background: yellowgreen;
+}
+
+input:placeholder-shown {
+  background: #000;
+}
+
