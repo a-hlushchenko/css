@@ -1,0 +1,152 @@
+* {
+	font-family: "Roboto", sans-serif;
+}
+
+.page {
+	background: #ffffff;
+	padding: 0 15px;
+}
+
+.page-content {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+header {
+	padding: 24px;
+}
+
+footer {
+	padding: 24px 0;
+}
+
+.logo {
+	font-size : 17px;
+	background: #563D7C;
+	color: white;
+	border-radius: 6px;
+	padding: 1px 8px;
+}
+
+.divider {
+	background: #DEE2E6;
+	height: 1px;
+}
+
+.nav {
+	display: block;
+}
+
+.navlink {
+	font-size: 16px;
+	color: #343A40;
+	text-decoration: none;
+}
+
+.navlink:hover {
+	text-decoration: underline;
+	color: blue;
+}
+
+.nav-vertical > .navlink:not(:last-child) {
+	display: block;
+	margin-bottom: 12px;
+
+}
+
+.nav-default > .navlink:not(:last-child) {
+	margin-right: 24px;
+}
+
+.header-nav-right {
+	width: fit-content;
+	margin-left: auto;
+}
+
+.footer-copyright {
+	display: block;
+	font-size: 14px;
+	color: #6C757D;
+	margin-top: 12px;
+}
+
+.footer-title {
+	font-size: 20px;
+	font-weight: 500;
+	color: #212529;
+	margin-bottom: 12px;
+}
+
+section {
+	margin-top: 80px;
+}
+
+section:last-of-type {
+	margin: 80px 0;
+}
+
+.hero-title {
+	font-size: 56px;
+	color: #212529;
+	margin-bottom: 12px;
+	text-align: center;
+}
+
+.hero-text {
+	font-size: 20px;
+	color: #212529;
+	max-width: 585px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.plans-card {
+	padding: 0;
+	text-align: center;
+}
+
+.plans-card:not(:last-of-type) {
+	margin-right: 24px;
+}
+
+.card-header {
+	text-align: center;
+	font-size: 24px;
+	color: #212529;
+	padding: 12px;
+}
+
+.card-body {
+	padding: 24px;
+}
+
+.card-text {
+	font-size: 16px;
+	color: #212529;
+}
+
+.card-text:not(:last-of-type) {
+	margin-bottom: 12px;
+}
+
+.card-price {
+	font-size: 40px;
+	color: #212529;
+	font-weight: 500;
+}
+
+.card-price-duration {
+	color: #6C757D;
+	font-size: 29px;
+}
+
+.card-texts {
+	margin: 24px 0;
+}
+
+.card-button {
+	display: block;
+	width: 100%;
+	font-size: 19px;
+	padding: 9px;
+}

@@ -1,0 +1,51 @@
+<div class="page">
+	<div class="page-content">
+		<header class="header row">
+
+			<div class="col-3">
+				{{>logo}}
+			</div>
+
+			<nav class="header-nav col-9">
+				<div class="header-nav-right">
+					{{>nav list=header}}
+				</div>
+			</nav>
+
+		</header>
+		{{>divider}}
+
+		<main>
+
+			<section>
+				{{>hero data=hero}}
+			</section>
+
+			<section class="row plans">
+				{{#each plans}}
+				<div class="col plans-card">
+					{{>card}}
+				</div>
+				{{/each}}
+			</section>
+
+		</main>
+
+		{{>divider}}
+		<footer class="footer row">
+
+			<div class="col-3">
+				{{>logo}}
+				<span class="footer-copyright">Copyright 2023</span>
+			</div>
+
+			{{#each footer}}
+			<div class="col-3">
+				<div class="footer-title">{{title}}</div>
+				{{>nav list=links isVertical=true}}
+			</div>
+			{{/each}}
+
+		</footer>
+	</div>
+</div>

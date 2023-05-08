@@ -1,0 +1,25 @@
+<div class="card">
+
+	<div class="card-header">{{name}}</div>
+
+	<div class="card-body">
+
+		<div>
+			<span class="card-price">${{price}}</span>
+			<span class="card-price-duration"> / mo</span>
+		</div>
+
+		<div class="card-texts">
+			{{#each features}}
+			<div class="plans-text">{{this}}</div>
+			{{/each}}
+		</div>
+
+		<div>
+			<button
+				class="btn card-button {{#unless @first}}btn-primary{{else}}btn-outline-primary{{/unless}}">{{button}}</button>
+		</div>
+
+	</div>
+
+</div>
