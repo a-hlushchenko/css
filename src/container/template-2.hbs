@@ -1,0 +1,50 @@
+<main>
+
+	<section>
+		<div class="hero">
+			{{>hero data=hero}}
+			<div>
+				<a class="button" href="{{hero.button.url}}">{{hero.button.text}}</a>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="row g-4">
+			{{>preview}}
+		</div>
+	</section>
+
+	<section class='row g-0'>
+
+		<div class="list-header row g-0">
+			<h2 class="col-6 list-title">List of posts</h2>
+			<div class="col-6 categorys">
+				{{#each categories}}
+				<button class="category-button">{{text}}</button>
+				{{/each}}
+			</div>
+		</div>
+
+		<div class="list col-6">
+			{{#each news}}
+			{{>post}}
+			{{/each}}
+		</div>
+
+		<aside class="list-aside col-4">
+
+			<div class="aside-card">
+				<h3 class="aside-title">About</h3>
+				<p class="aside-card-text">{{about}}</p>
+			</div>
+
+			{{>link-list data=archive title='Archives'}}
+
+			{{>link-list data=social title='Social'}}
+
+		</aside>
+
+	</section>
+
+</main>
