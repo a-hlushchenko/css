@@ -1,6 +1,16 @@
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   font-size: 16px;
+}
+
+:root {
+  --s-s: 14px;
+  --s-m: 20px;
+  --s-l: 24px;
+  --w-t: 500;
+  --col-bor: #dee2e6;
+  --col-text: #343a40;
+  --col-title: #212529;
 }
 
 ::selection {
@@ -11,35 +21,60 @@
 body {
   background: #ffffff;
   padding: 0 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.page {
   max-width: 960px;
-  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--s-l) 0;
 }
 
 header {
-  padding: 24px;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid var(--col-bor);
 }
 
 footer {
-  padding: 24px 0;
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid var(--col-bor);
 }
 
 .logo {
-  font-size: 17px;
   background: #563d7c;
   color: white;
+  font-size: 17px;
   border-radius: 6px;
-  padding: 1px 8px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav {
-  display: block;
+  display: flex;
+}
+
+.nav-vertical {
+  flex-direction: column;
+  gap: 16px;
+}
+
+.nav-default {
+  gap: var(--s-l);
 }
 
 .navlink {
-  font-size: 16px;
-  color: #343a40;
+  color: var(--col-text);
   text-decoration: none;
 }
 
@@ -48,46 +83,29 @@ footer {
   color: blue;
 }
 
-.nav-vertical > .navlink:not(:last-child) {
-  display: block;
-  margin-bottom: 12px;
-}
-
-.nav-default > .navlink:not(:last-child) {
-  margin-right: 24px;
-}
-
-.header-nav-right {
-  width: fit-content;
-  margin-left: auto;
-}
-
 .footer-copyright {
   display: block;
-  font-size: 14px;
-  color: #6c757d;
-  margin-top: 12px;
+  font-size: var(--s-s);
+  color: var(--col-text);
+  margin-top: var(--s-l);
 }
 
 .footer-title {
-  font-size: 20px;
-  font-weight: 500;
-  color: #212529;
-  margin-bottom: 12px;
-}
-
-section {
-  margin-top: 80px;
-}
-
-section:last-of-type {
-  margin: 80px 0;
+  font-size: var(--s-m);
+  font-weight: var(--w-t);
+  color: var(--col-title);
 }
 
 .hero-title {
   font-size: 56px;
+  margin: 0;
 }
 
 .hero-text {
-  font-size: 20px;
+  font-size: var(--s-m);
+  margin: 0;
+}
+
+.footer-title {
+  margin-bottom: var(--s-l);
 }

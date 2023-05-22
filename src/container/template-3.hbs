@@ -1,0 +1,28 @@
+<div class="hero">
+	{{#with hero}}
+	<div class="hero-content">{{>hero}}</div>
+	<img src="{{photo}}" alt="photo" class="hero-img">
+	{{/with}}
+</div>
+
+
+<main class="blog">
+	{{#each blog}}
+	<div class="card-blog">
+		<img src="{{img}}" alt="blog image" class="blog-img">
+		<h2 class="blog-title">{{title}}</h2>
+		<p class="blog-text">{{text}}</p>
+		<a href="{{href}}" class="button blog-button">{{button}}</a>
+	</div>
+	{{/each}}
+</main>
+
+<div class="form">
+	{{#with form}}
+	<div class="form-content">
+		<h3 class="form-title">{{title}}</h3>
+		<p class="form-text">{{info}}</p>
+	</div>
+	<a href="{{href}}" class="button form-button">{{button}}</a>
+	{{/with}}
+</div>

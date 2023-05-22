@@ -199,10 +199,8 @@
   width: calc(50% - 20px / 2);
 }
 
-header,
 .list-header,
-.list-news,
-footer {
+.list-news {
   display: flex;
   justify-content: space-between;
 }
