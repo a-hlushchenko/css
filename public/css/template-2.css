@@ -183,3 +183,35 @@
 .aside-link:hover {
   text-decoration: underline;
 }
+
+.flex-container {
+  display: flex;
+  /* flex-flow: row wrap; */
+  /* place-content: space-evenly flex-start; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.flex-item {
+  /* align-self: flex-start; */
+  width: calc(50% - 20px / 2);
+}
+
+header,
+.list-header,
+.list-news,
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list {
+  flex: 2 0 100px;
+}
+
+.list-aside {
+  flex-basis: 100px;
+  flex-grow: 1;
+}

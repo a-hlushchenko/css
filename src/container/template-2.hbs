@@ -10,40 +10,44 @@
 	</section>
 
 	<section>
-		<div class="row g-4">
+		<div class="flex-container">
 			{{>preview}}
 		</div>
 	</section>
 
-	<section class='row g-0'>
+	<section>
 
-		<div class="list-header row g-0">
-			<h2 class="col-6 list-title">List of posts</h2>
-			<div class="col-6 categorys">
+		<div class="list-header">
+			<h2 class="list-title">List of posts</h2>
+			<div class="categorys">
 				{{#each categories}}
 				<button class="category-button">{{text}}</button>
 				{{/each}}
 			</div>
 		</div>
 
-		<div class="list col-6">
-			{{#each news}}
-			{{>post}}
-			{{/each}}
-		</div>
+		<div class="list-news">
 
-		<aside class="list-aside col-4">
-
-			<div class="aside-card">
-				<h3 class="aside-title">About</h3>
-				<p class="aside-card-text">{{about}}</p>
+			<div class="list">
+				{{#each news}}
+				{{>post}}
+				{{/each}}
 			</div>
 
-			{{>link-list data=archive title='Archives'}}
+			<aside class="list-aside">
 
-			{{>link-list data=social title='Social'}}
+				<div class="aside-card">
+					<h3 class="aside-title">About</h3>
+					<p class="aside-card-text">{{about}}</p>
+				</div>
 
-		</aside>
+				{{>link-list data=archive title='Archives'}}
+
+				{{>link-list data=social title='Social'}}
+
+			</aside>
+
+		</div>
 
 	</section>
 

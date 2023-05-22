@@ -1,3 +1,8 @@
+:root {
+  --color: blue;
+  --space: 24px;
+}
+
 .hero-title {
   font-size: 56px;
   color: #212529;
@@ -22,18 +27,18 @@
 }
 
 .plans-card:not(:last-of-type) {
-  margin-right: 24px;
+  margin-right: var(--space);
 }
 
 .card-header {
   text-align: center;
-  font-size: 24px;
+  font-size: var(--space);
   color: #212529;
   padding: 12px;
 }
 
 .card-body {
-  padding: 24px;
+  padding: var(--space);
 }
 
 .card-text {
@@ -58,7 +63,7 @@
 }
 
 .card-texts {
-  margin: 24px 0;
+  margin: var(--space) 0;
 }
 
 .card-button {
@@ -108,6 +113,7 @@ h1 {
   word-spacing: 5px;
   overflow: auto;
   resize: both;
+  margin: 100px 0;
 }
 
 /* не повна підтримка */
@@ -170,4 +176,111 @@ body {
   border-image-slice: 20%;
   border-image-repeat: round;
   border-image-outset: 50px;
+}
+
+.card-texts {
+  list-style-type: upper-alpha;
+  padding: 0;
+  list-style-position: inside;
+  list-style-image: linear-gradient(
+    to bottom,
+    blue,
+    yellow
+  );
+}
+
+.plans-text {
+  display: list-item;
+  text-align: left;
+  margin-left: 5px;
+}
+
+td {
+  border: 1px solid black;
+  border-bottom-color: red;
+  padding: 5px;
+}
+
+table {
+  table-layout: fixed;
+  width: 500px;
+  border-collapse: separate;
+  border-spacing: 10px;
+  caption-side: top;
+  empty-cells: hide;
+  margin-left: calc(50% - (500px / 2));
+}
+
+.card:hover {
+  opacity: 70%;
+}
+
+caption::before,
+caption::after {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  content: '';
+  background-image: url(https://picsum.photos/10);
+}
+
+caption::before {
+  margin-right: 5px;
+}
+
+caption::after {
+  margin-left: 5px;
+}
+
+caption {
+  color: var(--color);
+}
+
+.columns {
+  columns: 2;
+  column-gap: 50px;
+  column-rule: solid grey 2px;
+  column-fill: balance;
+}
+
+.test-col {
+  column-span: all;
+  break-before: page;
+  break-after: avoid;
+  break-inside: avoid;
+  box-decoration-break: slice;
+  orphans: 4;
+  widows: 4;
+  isolation: isolate;
+  mix-blend-mode: difference;
+  background-blend-mode: multiply;
+  color: red;
+  all: initial;
+  background: blue;
+  appearance: none;
+  background-image: image-set(
+    'photo.png' 2x,
+    'tree.jpg' 2x
+  );
+  clip-path: circle(40%);
+  scroll-padding: 10px;
+}
+
+.scroll {
+  overflow-y: scroll;
+  height: 100px;
+  scroll-snap-type: y mandatory;
+  scroll-padding: 20px;
+  scroll-margin: 20px;
+  scroll-snap-stop: always;
+}
+
+.scroll-item {
+  height: 100px;
+  background: purple;
+}
+
+.second {
+  background: #fff;
+  scroll-snap-align: center;
 }
