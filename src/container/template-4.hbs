@@ -1,0 +1,24 @@
+<main class="hero">
+	{{#with main}}
+	<img src="{{image}}" alt="photo" class="hero-img">
+	<div class="hero-content">
+		{{>hero text=descriotion title=heading}}
+		<a href="{{href}}" class="button button-hero">{{button}}</a>
+	</div>
+	{{/with}}
+</main>
+
+<div class="featured">
+	{{#each featured}}
+	{{>template-card title=heading text=info img=photo href=linkUrl button=linkText}}
+	{{/each}}
+</div>
+
+<div class="actions">
+	{{#each actions}}
+	<div class="actions-item">
+		<h3 class="actions-title">{{heading}}</h3>
+		<a href="{{url}}" class="button actions-button">{{text}}</a>
+	</div>
+	{{/each}}
+</div>
