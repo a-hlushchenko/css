@@ -1,7 +1,11 @@
 <div class="hero">
 	{{#with hero}}
 	<div class="hero-content">{{>hero}}</div>
+	<div class="slider">
+		<div class="slider-item slider-left"><--</div>
+		<div class="slider-item slider-right">--></div>
 	<img src="{{photo}}" alt="photo" class="hero-img">
+	</div>
 	{{/with}}
 </div>
 
@@ -20,4 +24,9 @@
 	</div>
 	<a href="{{href}}" class="button form-button">{{button}}</a>
 	{{/with}}
+</div>
+
+<div class="position-container">
+	<div class="position-test"></div>
+	<div class="position"></div>
 </div>

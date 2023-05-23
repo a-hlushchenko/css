@@ -25,9 +25,8 @@
 }
 
 .hero-img {
-  max-width: var(--w-t) px;
-  max-height: var(--w-t) px;
   border-radius: 12px;
+  width: 100%;
 }
 
 .blog {
@@ -95,4 +94,56 @@
 .form-text {
   text-decoration: none;
   color: rgb(176, 176, 176);
+}
+
+.position-container {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.position {
+  height: 50px;
+  width: 50px;
+  background: lightskyblue;
+  border-radius: 8px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.position-test {
+  height: 50px;
+  width: 200px;
+  background: orangered;
+  border-radius: 8px;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider-item {
+  background: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 15px);
+  cursor: pointer;
+}
+
+.slider-item:hover {
+  opacity: 0.7;
+}
+
+.slider-left {
+  left: 30px;
+}
+
+.slider-right {
+  right: 30px;
 }
