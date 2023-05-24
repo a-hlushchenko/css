@@ -1,4 +1,4 @@
-<div class="hero">
+<div class="hero" id="test">
 	{{#with hero}}
 	<div class="hero-content">{{>hero}}</div>
 	<div class="slider">
@@ -27,7 +27,7 @@
 
 <div class="position-container">
 	<div class="position-test">{{hero.text}}</div>
-	<div class="position"></div>
+	<a class="position" href="#test"></a>
 </div>
 
 <main class="blog">
@@ -47,10 +47,6 @@
 	{{>template-card}}
 	{{/each}}
 </main>
-
-<div class="position-test">
-	<a href="#test" class="position"></a>
-</div>
 
 <div>
 	{{hero.text}} {{hero.text}}

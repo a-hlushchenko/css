@@ -71,7 +71,7 @@
   background: #563d7c;
   padding: var(--s-l);
   border-radius: 8px;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   z-index: 2;
 }
@@ -101,19 +101,9 @@
 
 .position-container {
   display: flex;
+  flex-direction: column;
   gap: 20px;
   position: relative;
-}
-
-.position {
-  height: 50px;
-  width: 50px;
-  background: lightskyblue;
-  border-radius: 8px;
-  position: fixed;
-  bottom: 100px;
-  right: 100px;
-  z-index: 2;
 }
 
 .position-test {
@@ -123,10 +113,17 @@
   color: white;
   background: darkblue;
   position: fixed;
-  bottom: 50px;
-  right: 50px;
+  top: 100px;
+  left: 50px;
   border-radius: 8px;
   z-index: 3;
+  transition: top 2s;
+  transition-timing-function: linear;
+  transition-delay: 2s;
+}
+
+body:hover .position-test {
+  top: 600px;
 }
 
 .slider {
@@ -175,4 +172,23 @@
 .caret {
   caret-color: red;
   border-color: black 1px solid;
+}
+
+.position {
+  height: 100px;
+  width: 100px;
+  background: lightskyblue;
+  border-radius: 8px;
+  /* position: fixed;
+  bottom: 100px;
+  right: 100px;
+  z-index: 2;*/
+  transition-property: background-color, width, height;
+  transition-duration: 0.5s;
+}
+
+.position:hover {
+  background: green;
+  width: 120px;
+  height: 120px;
 }
