@@ -2,13 +2,12 @@
 	{{#with hero}}
 	<div class="hero-content">{{>hero}}</div>
 	<div class="slider">
-		<div class="slider-item slider-left"><--</div>
-		<div class="slider-item slider-right">--></div>
-	<img src="{{photo}}" alt="photo" class="hero-img">
+		<div class="slider-item slider-left">--</div>
+		<div class="slider-item slider-right">--</div>
+		<img src="{{photo}}" alt="photo" class="hero-img">
 	</div>
 	{{/with}}
 </div>
-
 
 <main class="blog">
 	{{#each blog}}
@@ -27,6 +26,24 @@
 </div>
 
 <div class="position-container">
-	<div class="position-test"></div>
+	<div class="position-test">{{hero.text}}</div>
 	<div class="position"></div>
 </div>
+
+<main class="blog">
+	{{#each blog}}
+	{{>template-card}}
+	{{/each}}
+</main>
+
+<main class="blog">
+	{{#each blog}}
+	{{>template-card}}
+	{{/each}}
+</main>
+
+<main class="blog">
+	{{#each blog}}
+	{{>template-card}}
+	{{/each}}
+</main>

@@ -124,3 +124,12 @@ footer {
 .footer-title {
   margin-bottom: var(--s-l);
 }
+
+.header {
+  position: sticky;
+  max-width: 1000px;
+  width: 100%;
+  background: white;
+  z-index: 2;
+  top: 0;
+}
