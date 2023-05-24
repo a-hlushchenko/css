@@ -157,3 +157,22 @@
 .slider-right {
   right: 30px;
 }
+
+.img-float {
+  float: left;
+  width: 200px;
+  height: 100px;
+  margin: 12px 12px 12px 0;
+  object-fit: contain;
+  object-position: top right;
+}
+
+.clear-text {
+  clear: right;
+  user-select: all;
+}
+
+.caret {
+  caret-color: red;
+  border-color: black 1px solid;
+}
