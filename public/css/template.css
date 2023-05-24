@@ -11,6 +11,7 @@
   --col-bor: #dee2e6;
   --col-text: #343a40;
   --col-title: #212529;
+  scroll-behavior: smooth;
 }
 
 ::selection {
