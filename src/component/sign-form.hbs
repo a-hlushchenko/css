@@ -1,0 +1,24 @@
+{{#with form}}
+<form class="form">
+
+	<h1 class="form-title">{{title}}</h1>
+
+	<div class="form-input-list">
+		{{#each inputs}}
+		<input type="{{type}}" placeholder="{{placeholder}}" id="form-input-{{id}}" class="form-input" required
+			minlength="6">
+		{{/each}}
+	</div>
+
+	<label class="form-checkbox" for="{{checkbox.name}}">
+		<input name="{{checkbox.name}}" type="checkbox" id="{{checkbox.name}}">
+		<div></div>
+		<label for="{{checkbox.name}}">{{checkbox.label}}</label>
+	</label>
+
+	<button type="submit" class="form-button">{{button}}</button>
+
+	<p class="form-info">{{info}}</p>
+
+</form>
+{{/with}}

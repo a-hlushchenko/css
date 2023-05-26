@@ -1,0 +1,48 @@
+<main class="main">
+
+	<section class="hero">
+		{{>hero text=info.description title=info.title}}
+	</section>
+
+	{{>sign-form}}
+
+</main>
+
+{{#with updates}}
+<div class="updates">
+
+	<h3 class="updates-title">{{title}}</h3>
+
+	{{#each list}}
+	<div class="upd">
+		<img src="https://picsum.photos/32" alt="" class="upd-img">
+		<div class="upd-content">
+			<div class="upd-nickname">@{{nickname}}</div>
+			<p class="upd-description">{{description}}</p>
+		</div>
+	</div>
+	{{/each}}
+
+	<a href="{{show_all.url}}" class="updates-link">{{show_all.text}}</a>
+
+</div>
+{{/with}}
+
+{{#with experience}}
+<div class="experience">
+
+	<span class="experience-badge">{{badge}}</span>
+
+	<h2 class="experience-title">{{title}}</h2>
+
+	<div class="exps">
+		{{#each list}}
+		<div class="exp">
+			<strong class="exp-name">{{name}}</strong>
+			<p class="exp-details">{{details}}</p>
+		</div>
+		{{/each}}
+	</div>
+
+</div>
+{{/with}}
