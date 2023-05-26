@@ -1,0 +1,156 @@
+.main {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+.hero {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero-text {
+  font-size: 24px;
+  max-width: 412px;
+}
+
+.form {
+  width: 45%;
+  padding: 60px 48px;
+  background-color: #f8f9fa;
+  gap: 20px;
+  border-radius: 4px;
+}
+
+.form-title {
+  display: none;
+}
+
+.form-info {
+  padding-top: 20px;
+  border-top: 1px solid var(--col-title);
+}
+
+.form-input {
+  background-color: white;
+}
+
+.form-checkbox > div {
+  background-color: #fff;
+}
+
+.updates {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.updates-title {
+  font-size: 24px;
+  font-weight: 400;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--col-bor);
+}
+
+.upd {
+  display: flex;
+  gap: 8px;
+}
+
+.upd-img {
+  width: 32px;
+  height: 32px;
+}
+
+.upd-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--col-bor);
+  width: 100%;
+}
+
+.upd-nickname {
+  color: #6c757d;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.upd-description {
+  color: #6c757d;
+}
+
+.updates-link {
+  text-decoration: none;
+  color: #007bff;
+  width: fit-content;
+  font-size: 14px;
+  border-bottom: 1px solid transparent;
+  transition: opacity 0.7s, border-bottom 0.7s;
+}
+
+.updates-link:hover {
+  opacity: 0.8;
+  border-bottom: 1px solid #007bffbb;
+}
+
+.updates-link:active {
+  opacity: 0.6;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px 28px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  position: relative;
+}
+
+.exps {
+  display: flex;
+  gap: 24px;
+}
+
+.exp {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: #212529;
+  border-radius: 12px;
+}
+
+.experience-title {
+  color: var(--col-title);
+  font-size: 42px;
+}
+
+.exp-name {
+  color: #fff;
+  font-size: 20px;
+}
+
+.exp-details {
+  color: #b1b1b1;
+}
+
+.experience-badge {
+  border-radius: 70px;
+  background-color: #ff7347;
+  position: absolute;
+  color: white;
+  padding: 12px 16px;
+  font-size: 24px;
+  font-weight: 700;
+  transform: rotate(35deg);
+  right: -30px;
+  top: -20px;
+}
