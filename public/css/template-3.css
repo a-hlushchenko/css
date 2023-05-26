@@ -103,7 +103,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  position: relative;
+  /* position: relative; */
 }
 
 .position-test {
@@ -112,7 +112,7 @@
   padding: 24px;
   color: white;
   background: darkblue;
-  position: fixed;
+  /* position: fixed; */
   top: 100px;
   left: 50px;
   border-radius: 8px;
@@ -123,7 +123,7 @@
 }
 
 body:hover .position-test {
-  top: 600px;
+  /* top: 600px; */
 }
 
 .slider {
@@ -179,16 +179,49 @@ body:hover .position-test {
   width: 100px;
   background: lightskyblue;
   border-radius: 8px;
-  /* position: fixed;
-  bottom: 100px;
-  right: 100px;
-  z-index: 2;*/
-  transition-property: background-color, width, height;
-  transition-duration: 0.5s;
+  /* position: fixed; */
+  left: 20px;
+  top: 20px;
+  border-radius: 12px;
+  z-index: 5;
+  /*right: 100px;
+  z-index: 2;
+  transition-property: background-color, left, width, height,
+    border-radius;
+  transition-duration: 1s;*/
 }
 
-.position:hover {
-  background: green;
-  width: 120px;
-  height: 120px;
+.test-button {
+  background: purple;
+  border-radius: 12px;
+  padding: 16px;
+  width: fit-content;
+  color: white;
+  font-size: 20px;
+  background: repeating-conic-gradient(
+    from 0deg at 50% 50%,
+    green 0deg 30deg,
+    blue 30deg 60deg,
+    red 60deg 90deg
+  );
+}
+
+.position {
+  /* background: greenyellow;
+  left: 300px;
+  width: 150px;
+  height: 150px;
+  border-radius: 35%; */
+  /* animation-name: animation; */
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  font-size: 16px;
+  font-weight: 900;
+  animation-fill-mode: both;
+  transform-origin: bottom right;
+}
+
+.test-button:focus + .position {
+  animation-play-state: paused;
 }

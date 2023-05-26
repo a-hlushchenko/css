@@ -1,0 +1,55 @@
+<main class="main">
+
+	{{#with messages}}
+	<section class="messages">
+
+		<h1 class="message-title">{{title}}</h1>
+
+		{{#each list}}
+		<div class="msg">
+			<strong class="msg-name">{{name}}</strong>
+			<p class="msg-message">{{message}}</p>
+			<span class="msg-day">{{day}}</span>
+		</div>
+		{{/each}}
+
+		<a href="#" class="messages-link">All messages</a>
+
+	</section>
+	{{/with}}
+
+	{{#with form}}
+	<form class="form">
+
+		<h1 class="form-title">{{title}}</h1>
+
+		<div class="form-input-list">
+			{{#each inputs}}
+			<input type="{{type}}" placeholder="{{placeholder}}" id="form-input-{{id}}" class="form-input" required
+				minlength="6">
+			{{/each}}
+		</div>
+
+		<label class="form-checkbox" for="{{checkbox.name}}">
+			<input name="{{checkbox.name}}" type="checkbox" id="{{checkbox.name}}">
+			<div></div>
+			<label for="{{checkbox.name}}">{{checkbox.label}}</label>
+		</label>
+
+		<button type="submit" class="form-button">{{button}}</button>
+
+		<p class="form-info">{{info}}</p>
+
+	</form>
+	{{/with}}
+
+</main>
+
+<div class="advantages">
+	{{#each advantages}}
+	<div class="adv">
+		<strong class="adv-title">{{title}}</strong>
+		<p class="adv-text">{{text}}</p>
+	</div>
+	{{/each}}
+</div>
