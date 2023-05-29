@@ -213,3 +213,9 @@
   flex-basis: 100px;
   flex-grow: 1;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}

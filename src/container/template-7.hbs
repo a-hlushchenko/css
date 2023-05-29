@@ -1,0 +1,34 @@
+<main class="main">
+
+	<section class="hero">
+		<h1 class="hero-title">{{hero.title}}</h1>
+		<p class="hero-description">{{hero.description}}</p>
+		<a href="{{hero.button.url}}" class="hero-button">{{hero.button.text}}</a>
+	</section>
+
+	<section class="shop-about">
+		<h1 class="about-heading">{{about.heading}}</h1>
+		<p class="about-info">{{about.info}}</p>
+	</section>
+
+</main>
+
+<div class="articles">
+
+	<div class="articles-header">
+		<h2 class="articles-title">Our Articles</h2>
+		<a href="#" class="articles-button">View All</a>
+	</div>
+
+	<div class="article-cards">
+		{{#each articles}}
+		<div class="art-card" id="art-card-{{id}}">
+			<img src="{{photo}}" alt="{{name}}" class="art-card-img">
+			<h4 class="art-name">{{name}}</h4>
+			<p class="art-description">{{description}}</p>
+			<a href="#" class="art-button">Read All</a>
+		</div>
+		{{/each}}
+	</div>
+
+</div>
