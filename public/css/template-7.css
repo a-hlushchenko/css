@@ -19,6 +19,11 @@ body {
   margin: 0 auto;
 }
 
+::selection {
+  color: black;
+  background-color: white;
+}
+
 .header {
   display: flex;
   flex-direction: column;
