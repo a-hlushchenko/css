@@ -72,7 +72,7 @@
   background: #563d7c;
   padding: var(--s-l);
   border-radius: 8px;
-  position: sticky;   
+  position: sticky;
   top: 0;
   z-index: 2;
   gap: 20px;
@@ -236,17 +236,19 @@ body:hover .position-test {
   grid-template-columns: repeat(3, 1fr);
 }
 
-@media all and (480px < width <= 760px) {
+.hero-container {
+  container-type: inline-size;
+  container-name: hero;
+}
 
+@media all and (480px < width <= 760px) {
   .blog {
     grid-template-columns: repeat(2, 1fr);
     gap: 80px;
   }
-
 }
 
 @media all and (width <= 480px) {
-
   .blog {
     grid-template-columns: 1fr;
     gap: 80px;
@@ -262,4 +264,22 @@ body:hover .position-test {
     text-align: center;
   }
 
+  .form-text {
+    max-width: 300px;
+    line-height: 150%;
+  }
+}
+
+@media all and (display-mode: fullscreen) {
+  .form {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+  }
+}
+
+@container hero (width <= 760px) {
+  .hero {
+    flex-direction: column;
+  }
 }

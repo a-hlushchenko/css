@@ -1,12 +1,14 @@
-<div class="hero" id="test">
-	{{#with hero}}
-	<div class="hero-content">{{>hero}}</div>
-	<div class="slider">
-		<div class="slider-item slider-left">--</div>
-		<div class="slider-item slider-right">--</div>
-		<img src="{{photo}}" alt="photo" class="hero-img">
+<div class="hero-container">
+	<div class="hero" id="test">
+		{{#with hero}}
+		<div class="hero-content">{{>hero}}</div>
+		<div class="slider">
+			<div class="slider-item slider-left">--</div>
+			<div class="slider-item slider-right">--</div>
+			<img src="{{photo}}" alt="photo" class="hero-img">
+		</div>
+		{{/with}}
 	</div>
-	{{/with}}
 </div>
 
 <main class="blog">
@@ -37,7 +39,7 @@
 	{{/each}}
 </main>
 
- <main class="blog">
+<main class="blog">
 	{{#each blog}}
 	{{>template-card}}
 	{{/each}}
