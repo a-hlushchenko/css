@@ -1,17 +1,20 @@
+@font-face {
+  font-family: 'Segment';
+  src: url(/font/Segment-Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Segment';
+  src: url(/font/Segment-SemiBold.otf);
+  font-weight: 600;
+}
+
+@layer normalize, component, main, style;
+
 * {
   font-family: 'Roboto';
   font-size: 16px;
-}
-
-:root {
-  --s-s: 14px;
-  --s-m: 20px;
-  --s-l: 24px;
-  --w-t: 500px;
-  --col-bor: #dee2e6;
-  --col-text: #343a40;
-  --col-title: #212529;
-  scroll-behavior: smooth;
 }
 
 @keyframes animation {
@@ -97,19 +100,23 @@ footer {
   border-top: 1px solid var(--col-bor);
 }
 
-.button {
-  text-decoration: none;
-  padding: 12px 16px;
-  border-radius: 4px;
-  display: inline-block;
-}
+@layer component {
 
-.button:hover {
-  opacity: 0.9;
-}
+  .button {
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 4px;
+    display: inline-block;
+  }
 
-.button:active {
-  opacity: 0.8;
+  .button:hover {
+    opacity: 0.9;
+  }
+
+  .button:active {
+    opacity: 0.8;
+  }
+
 }
 
 .logo {

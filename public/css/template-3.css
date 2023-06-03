@@ -1,3 +1,13 @@
+@import '/css/var.css';
+
+@layer normalize, component, main, style;
+
+@layer style {
+  .card-button {
+    background-color: red;
+  }
+}
+
 .hero {
   display: flex;
   gap: 36px;
@@ -59,9 +69,11 @@
   color: var(--col-text);
 }
 
-.card-button {
-  color: white;
-  background: #6c757d;
+@layer main {
+  .card-button {
+    color: white;
+    background: #6c757d;
+  }
 }
 
 .form {
@@ -282,4 +294,13 @@ body:hover .position-test {
   .hero {
     flex-direction: column;
   }
+}
+
+.form {
+  height: 10vh;
+  width: 50vw;
+}
+
+.hero-title {
+  font-size: 5cqw;
 }
