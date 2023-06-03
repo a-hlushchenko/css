@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'HelveticaNeueBold';
+  src: url(/font/HelveticaNeueBold.ttf);
+}
+
+:root {
+  --col-white: #fff;
+  --page-width-pc: 1260px;
+  --page-width-laptop: 1024px;
+  --page-width-tablet: 760px;
+
+  --space-1: 8px;
+  --space-2: 12px;
+  --space-3: 16px;
+  --space-4: 20px;
+  --space-5: 24px;
+
+  --size-1: 14px;
+  --size-2: 18px;
+  --size-3: 24px;
+  --size-4: 32px;
+}
+
+body {
+  font-family: 'HelveticaNeueBold';
+  background-color: var(--col-white);
+}
+
+section {
+  width: 100%;
+  max-width: var(--page-width-pc);
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+}
+
+.hero-content {
+  max-width: 425px;
+  display: grid;
+  gap: var(--space-4);
+}
+
+.companies {
+  display: flex;
+  gap: 41px;
+  row-gap: var(--space-3);
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media all and (width >= 1260) {
+  section {
+    max-width: var(--page-width-pc);
+  }
+}
+
+@media all and (1260 > width >= 1024) {
+  section {
+    max-width: var(--page-width-laptop);
+  }
+}
+
+@media all and (1024 > width >= 760) {
+  section {
+    max-width: var(--page-width-tablet);
+  }
+}
