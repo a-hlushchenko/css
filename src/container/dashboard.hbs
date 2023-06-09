@@ -1,191 +1,248 @@
 <html>
 
-  <head>
-    <title>
-      dashboard
-    </title>
-    <meta charset='utf-8' />
-    <meta
-      name='viewport'
-      content='viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'
-    />
-    <link
-      rel='apple-touch-icon'
-      sizes='180x180'
-      href='/fav/apple-touch-icon.png'
-    />
-    <link
-      rel='icon'
-      type='image/png'
-      sizes='32x32'
-      href='/fav/favicon-32x32.png'
-    />
-    <link
-      rel='icon'
-      type='image/png'
-      sizes='16x16'
-      href='/fav/favicon-16x16.png'
-    />
-    <link rel='manifest' href='/fav/site.webmanifest' />
-    <meta
-      name='msapplication-TileColor'
-      content='#da532c'
-    />
-    <meta name='theme-color' content='#ffffff' />
-    <link href='css/normalize.css' rel='stylesheet' />
-    <link href='css/dashboard.css' rel='stylesheet' />
-  </head>
+<head>
+	<title>
+		dashboard
+	</title>
+	<meta charset='utf-8' />
+	<meta name='viewport'
+		content='viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+	<link rel='apple-touch-icon' sizes='180x180' href='/fav/apple-touch-icon.png' />
+	<link rel='icon' type='image/png' sizes='32x32' href='/fav/favicon-32x32.png' />
+	<link rel='icon' type='image/png' sizes='16x16' href='/fav/favicon-16x16.png' />
+	<link rel='manifest' href='/fav/site.webmanifest' />
+	<meta name='msapplication-TileColor' content='#da532c' />
+	<meta name='theme-color' content='#ffffff' />
+	<link href='css/normalize.css' rel='stylesheet' />
+	<link href='css/dashboard.css' rel='stylesheet' />
+</head>
 
-  <body>
+<body>
 
-    <div class='page page--dashboard'>
-      <aside class='page_aside aside grid grid-big'>
-        <div class='aside_logo'>Sidebar</div>
-        <nav class='aside_nav'>
-          <a
-            href='#'
-            class='nav-button nav-button--active text-white radius-small click'
-          >
-            <img
-              src='/svg/nav/home.svg'
-              class='icon nav-button_icon'
-            />
-            <span class='nav-button_text'>Home</span>
-          </a>
-          <a
-            href='#'
-            class='nav-button text-white radius-small click'
-          >
-            <img
-              src='/svg/nav/orders.svg'
-              class='icon nav-button_icon'
-            />
-            <span class='nav-button_text'>Orders</span>
-          </a>
-          <a
-            href='#'
-            class='nav-button text-white radius-small click'
-          >
-            <img
-              src='/svg/nav/products.svg'
-              class='icon nav-button_icon'
-            />
-            <span class='nav-button_text'>Products</span>
-          </a>
-        </nav>
-      </aside>
-      <header class='header'>
-        <div class='layout header_content'>
-          <div class='header_search'>
-            <input
-              type='text'
-              class='field radius field-header'
-              placeholder='Search'
-            />
-            <span
-              class='icon header_icon-search'
-              style='background-image: url(/svg/header/search.svg)'
-            ></span>
-            <span
-              class='icon header_icon-settings click icon-button icon-blue'
-              style='background-image: url(/svg/header/settings.svg)'
-            ></span>
-          </div>
-          <div class='header_icons flex'>
-            <span
-              class='icon header_icon-right click icon-button icon-yellow'
-              style='background-image: url(/svg/header/internet.svg)'
-            ></span>
-            <span
-              class='icon header_icon-right click icon-button icon-blue-light'
-              style='background-image: url(/svg/header/lang.svg)'
-            ></span>
-            <span
-              class='icon header_icon-right click icon-button icon-yellow'
-              style='background-image: url(/svg/header/notify.svg)'
-            ></span>
-          </div>
-        </div>
-      </header>
-      <main class='main'>
-        <div class='layout'>
-          <section class='analytic box'>
+	<div class='page page--dashboard'>
+		<aside class='page_aside aside grid grid-big'>
+			<div class='aside_logo'>Sidebar</div>
+			<nav class='aside_nav'>
+				<a href='#' class='nav-button nav-button--active text-white radius-small click'>
+					<img src='/svg/nav/home.svg' class='icon nav-button_icon' />
+					<span class='nav-button_text'>Home</span>
+				</a>
+				<a href='#' class='nav-button text-white radius-small click'>
+					<img src='/svg/nav/orders.svg' class='icon nav-button_icon' />
+					<span class='nav-button_text'>Orders</span>
+				</a>
+				<a href='#' class='nav-button text-white radius-small click'>
+					<img src='/svg/nav/products.svg' class='icon nav-button_icon' />
+					<span class='nav-button_text'>Products</span>
+				</a>
+			</nav>
+		</aside>
+		<header class='header'>
+			<div class='layout header_content'>
+				<div class='header_search'>
+					<input type='text' class='field radius field-header' placeholder='Search' />
+					<span class='icon header_icon-search' style='background-image: url(/svg/header/search.svg)'></span>
+					<span class='icon header_icon-settings click icon-button icon-blue'
+						style='background-image: url(/svg/header/settings.svg)'></span>
+				</div>
+				<div class='header_icons flex'>
+					<span class='icon header_icon-right click icon-button icon-yellow'
+						style='background-image: url(/svg/header/internet.svg)'></span>
+					<span class='icon header_icon-right click icon-button icon-blue-light'
+						style='background-image: url(/svg/header/lang.svg)'></span>
+					<span class='icon header_icon-right click icon-button icon-yellow'
+						style='background-image: url(/svg/header/notify.svg)'></span>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class='layout main'>
+				<section class='analytic box'>
 
-            <div
-              class='analytic-card grid-double bg-purple'
-            >
+					<div class='analytic-card grid-double bg-purple'>
 
-              <span
-                class='icon analytic_icon click icon-purple'
-                style='background-image: url(/svg/analytic/earning.svg)'
-              ></span>
+						<span class='icon analytic_icon click icon-purple'
+							style='background-image: url(/svg/analytic/earning.svg)'></span>
 
-              <div class='grid relative'>
-                <div class='analytic-card_title'>$500
-                  <span
-                    class='icon click analytic_arrow'
-                    style='background-image: url(/svg/analytic/arrow.svg);'
-                  ></span></div>
-                <span class='text-gray'>Total earning</span>
-              </div>
+						<div class='grid relative'>
+							<div class='analytic-card_title'>$500
+								<span class='icon click analytic_arrow'
+									style='background-image: url(/svg/analytic/arrow.svg);'></span>
+							</div>
+							<span class='text-gray'>Total earning</span>
+						</div>
 
-            </div>
+					</div>
 
-            <div class='analytic-card grid-double bg-blue'>
+					<div class='analytic-card grid-double bg-blue'>
 
-              <span
-                class='icon analytic_icon click icon-blue'
-                style='background-image: url(/svg/analytic/order.svg)'
-              ></span>
+						<span class='icon analytic_icon click icon-blue'
+							style='background-image: url(/svg/analytic/order.svg)'></span>
 
-              <div class='grid'>
-                <div class='analytic-card_title'>$961</div>
-                <span class='text-gray'>Tota l Order</span>
-              </div>
+						<div class='grid'>
+							<div class='analytic-card_title'>$961</div>
+							<span class='text-gray'>Tota l Order</span>
+						</div>
 
-            </div>
+					</div>
 
-            <div
-              class='analytic-card analytic-card--mini bg-blue'
-            >
+					<div class='analytic-card analytic-card--mini bg-blue'>
 
-              <span
-                class='icon analytic_icon click icon-blue'
-                style='background-image: url(/svg/analytic/earning.svg)'
-              ></span>
+						<span class='icon analytic_icon click icon-blue'
+							style='background-image: url(/svg/analytic/earning.svg)'></span>
 
-              <div class='grid grid-small'>
-                <div class='analytic-card_title'>$203k</div>
-                <span class='text-gray'>Total Income</span>
-              </div>
+						<div class='grid grid-small'>
+							<div class='analytic-card_title'>$203k</div>
+							<span class='text-gray'>Total Income</span>
+						</div>
 
-            </div>
+					</div>
 
-            <div
-              class='analytic-card border analytic-card--mini'
-              style='margin-top: -4px;'
-            >
+					<div class='analytic-card border analytic-card--mini' style='margin-top: -4px;'>
 
-              <span
-                class='icon analytic_icon click icon-yellow'
-                style='background-image: url(/svg/analytic/income.svg)'
-              ></span>
+						<span class='icon analytic_icon click icon-yellow'
+							style='background-image: url(/svg/analytic/income.svg)'></span>
 
-              <div class='grid grid-small'>
-                <div class='analytic-card_title'>$203k</div>
-                <span class='text-dark-gray'>Total Income</span>
-              </div>
+						<div class='grid grid-small'>
+							<div class='analytic-card_title'>$203k</div>
+							<span class='text-dark-gray'>Total Income</span>
+						</div>
 
-            </div>
+					</div>
 
-          </section>
-        </div>
+				</section>
 
-      </main>
-    </div>
+				<section class="box purchase-list grid grid-big">
+					<h1 class="text-heading">Purchase list</h1>
 
-  </body>
+					<div class="divider"></div>
+
+					<div class="purchase grid grid-big">
+						<div class="grid">
+							<div>ID437661</div>
+							<div>May 11, 2023, 14:21</div>
+						</div>
+						<div class="grid">
+							<div>AirOn ProCam</div>
+							<div>7/8 USB Type-C</div>
+						</div>
+						<div class="grid">
+							<div>132.32 EUR</div>
+							<div class="text-warning">Not paid</div>
+						</div>
+						<div class="grid">
+							<div>Customer</div>
+							<div>robin@com.de</div>
+						</div>
+					</div>
+
+					<div class="divider"></div>
+
+					<div class="purchase grid grid-big">
+						<div class="grid">
+							<div>ID437661</div>
+							<div>May 11, 2023, 14:21</div>
+						</div>
+						<div class="grid">
+							<div>PHILIPS Essential</div>
+							<div>HD9200/90</div>
+						</div>
+						<div class="grid">
+							<div>543 USD</div>
+							<div class="text-success">Pay by Stripe</div>
+						</div>
+						<div class="grid">
+							<div>Customer</div>
+							<div>dima@com.ua</div>
+						</div>
+					</div>
+
+				</section>
+
+				<section class="payment box">
+					<form class="grid grid-big">
+						<h2 class="text-heading">Payment</h2>
+						<div class="divider"></div>
+
+						<div class="radio-block grid">
+							<div class='radio'>
+								<input type="radio" id="radio-1" name="payment">
+								<div class="radio_button"></div>
+								<label for="radio-1">Credit card</label>
+							</div>
+							<div class='radio'>
+								<input type="radio" id="radio-2" name="payment">
+								<div class="radio_button"></div>
+								<label for="radio-2">Debit card</label>
+							</div>
+							<div class='radio'>
+								<input type="radio" id="radio-3" name="payment">
+								<div class="radio_button"></div>
+								<label for="radio-3">PayPal</label>
+							</div>
+						</div>
+
+						<div class="grid grid-big payment_inputs">
+							<div class="grid grid-small">
+								<div>Name on card</div>
+								<input class="field" type="text">
+							</div>
+							<div class="grid grid-small">
+								<div>Name on card</div>
+								<input class="field" type="text">
+							</div>
+							<div class="grid grid-small">
+								<div>Name on card</div>
+								<input class="field" type="text">
+							</div>
+							<div class="grid grid-small">
+								<div>Name on card</div>
+								<input class="field" type="text">
+							</div>
+						</div>
+
+						<div class="divider"></div>
+
+						<div class="select-list grid grid-big">
+							<div class="select-list_item grid grid-small">
+								<div>Country</div>
+								<div class="field field--select relative">
+									<span class="select-placeholder">Choose...</span>
+									<span class='icon select-icon'
+										style='background-image: url(/svg/select.svg)'></span>
+									<select class="field_select">
+										<option value="UA">Ukraine</option>
+										<option value="EN">Grate Britain</option>
+										<option value="USA">United States</option>
+									</select>
+								</div>
+							</div>
+							<div class="select-list_item grid grid-small">
+								<div>Country</div>
+								<div class="field field--select relative">
+									<span>Choose...</span>
+									<span class='icon select-icon'
+										style='background-image: url(/svg/select.svg)'></span>
+									<select class="field_select">
+										<option value="UA">Ukraine</option>
+										<option value="EN">Grate Britain</option>
+										<option value="USA">United States</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="divider"></div>
+
+						<a href="#" class="payment_button click radius">Continue to checkout</a>
+
+					</form>
+				</section>
+			</div>
+		</main>
+
+	</div>
+
+</body>
 
 </html>
-
-test
