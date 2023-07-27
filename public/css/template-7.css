@@ -67,6 +67,7 @@ a[class*='link']:hover {
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
+  gap: 16px;
 }
 
 .header-ad {
@@ -240,4 +241,31 @@ a:active {
   padding: 8px 16px;
   background: #885ffb;
   border-radius: 10px;
+}
+
+@media all and (width < 520px) {
+  .header-links {
+    display: none;
+  }
+  .ad-text {
+    font-size: 14px;
+  }
+
+  .art-card-img {
+    width: 100%;
+  }
+
+  .footer-links {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .header-online {
+    display: none;
+  }
 }

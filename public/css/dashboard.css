@@ -325,4 +325,33 @@ body {
 }
 
 @layer adaptive {
+  @media all and (width < 1024px) {
+    .page_aside {
+      display: none;
+    }
+
+    .page--dashboard {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media all and (width < 940px) {
+    .analytic {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media all and (width < 940px) {
+    .analytic {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media all and (width < 560px) {
+    .main {
+      padding: var(--space-3);
+    }
+  }
 }
