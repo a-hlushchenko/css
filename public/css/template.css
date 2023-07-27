@@ -89,7 +89,7 @@ header,
 footer {
   display: flex;
   justify-content: space-between;
-  padding: var(--s-l) 0;
+  padding: 24px 0;
 }
 
 header {
@@ -101,7 +101,6 @@ footer {
 }
 
 @layer component {
-
   .button {
     text-decoration: none;
     padding: 12px 16px;
@@ -116,7 +115,6 @@ footer {
   .button:active {
     opacity: 0.8;
   }
-
 }
 
 .logo {
@@ -141,7 +139,7 @@ footer {
 }
 
 .nav-default {
-  gap: var(--s-l);
+  gap: 24px;
 }
 
 .navlink {
@@ -158,7 +156,7 @@ footer {
   display: block;
   font-size: var(--s-s);
   color: var(--col-text);
-  margin-top: var(--s-l);
+  margin-top: 24px;
 }
 
 .footer-title {
@@ -182,7 +180,7 @@ footer {
 }
 
 .footer-title {
-  margin-bottom: var(--s-l);
+  margin-bottom: 24px;
 }
 
 .header {
@@ -192,6 +190,7 @@ footer {
   background: white;
   z-index: 2;
   top: 0;
+  align-items: center;
 }
 
 .form {
@@ -278,4 +277,31 @@ footer {
 
 .form-checkbox > * {
   cursor: pointer;
+}
+
+.footer::after {
+  content: '';
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  background-color: #fff;
+  width: 100%;
+  z-index: 1;
+  height: 72px;
+}
+
+@media all and (width < 620px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+}
+
+@media all and (width < 420px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
 }

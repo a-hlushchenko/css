@@ -63,6 +63,10 @@ body {
     align-content: flex-start;
   }
 
+  main {
+    width: 100%;
+  }
+
   .main {
     padding: var(--space-4) var(--space-4);
     display: grid;
@@ -416,15 +420,10 @@ body {
     justify-content: space-between;
     flex-direction: row;
   }
-  
 }
 
 @layer adaptive {
   @media all and (width < 1180px) {
-    /* .analytic {
-      grid-template-columns: 1fr 1fr;
-    } */
-
     .main {
       display: flex;
       flex-direction: column;
@@ -434,28 +433,17 @@ body {
     .main > * {
       width: 100%;
     }
-/* 
-    .analytic {
-      grid-column: 1;
-    }
-
-    .aside, .header {
-      display: none;
-    } */
   }
 
   @media all and (width < 1024px) {
-    .analytic {
-      /* grid-template-columns: 1fr 1fr; */
-    }
-
     .purchase {
       grid-template-columns: 1fr 1fr;
     }
 
-    .aside, .header {
+    .aside,
+    .header {
       display: none;
-    } 
+    }
 
     .page--dashboard {
       display: flex;
@@ -465,14 +453,17 @@ body {
 
   @media all and (width < 800px) {
     .analytic {
-        grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
     }
   }
-  
+
   @media all and (width < 580px) {
-    .analytic, .purchase, .payment_inputs, .select-list {
-        display: flex;
-        flex-direction: column;
+    .analytic,
+    .purchase,
+    .payment_inputs,
+    .select-list {
+      display: flex;
+      flex-direction: column;
     }
   }
 }

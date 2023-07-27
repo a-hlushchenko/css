@@ -140,6 +140,7 @@
 
 .exp-details {
   color: #b1b1b1;
+  line-height: 150%;
 }
 
 .experience-badge {
@@ -151,6 +152,58 @@
   font-size: 24px;
   font-weight: 700;
   transform: rotate(35deg);
-  right: -30px;
+  right: -20px;
   top: -20px;
+}
+
+@media all and (width < 1040px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .hero-title {
+    text-align: center;
+    font-size: 42px;
+  }
+
+  .hero-text {
+    max-width: none;
+    text-align: center;
+  }
+}
+
+@media all and (width < 740px) {
+  .exps {
+    flex-direction: column;
+  }
+}
+
+@media all and (width < 740px) {
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-text {
+    font-size: 20px;
+  }
+}
+
+@media all and (width < 580px) {
+  .form {
+    padding: 24px;
+  }
+
+  .upd-description {
+    font-size: 14px;
+  }
 }
