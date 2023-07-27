@@ -205,9 +205,9 @@ a:active {
 }
 
 .article-cards {
-  display: flex;
+  display: grid;
   gap: 32px;
-  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: stretch;
 }
 
@@ -216,7 +216,6 @@ a:active {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-width: 360px;
   justify-content: space-between;
 }
 
@@ -243,7 +242,21 @@ a:active {
   border-radius: 10px;
 }
 
+.art-card-img {
+  width: 100%;
+}
+
+@media all and (width < 880px) {
+  .article-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media all and (width < 520px) {
+  .article-cards {
+    display: flex;
+    flex-direction: column;
+  }
   .header-links {
     display: none;
   }

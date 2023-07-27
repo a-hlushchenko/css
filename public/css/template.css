@@ -156,7 +156,7 @@ footer {
   display: block;
   font-size: var(--s-s);
   color: var(--col-text);
-  margin-top: var(--s-l);
+  margin-top: 24px;
 }
 
 .footer-title {
@@ -190,6 +190,7 @@ footer {
   background: white;
   z-index: 2;
   top: 0;
+  align-items: center;
 }
 
 .form {
@@ -276,4 +277,31 @@ footer {
 
 .form-checkbox > * {
   cursor: pointer;
+}
+
+.footer::after {
+  content: '';
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  background-color: #fff;
+  width: 100%;
+  z-index: 1;
+  height: 72px;
+}
+
+@media all and (width < 620px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+}
+
+@media all and (width < 420px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
 }

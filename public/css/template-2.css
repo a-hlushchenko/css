@@ -219,3 +219,41 @@ main {
   flex-direction: column;
   gap: 80px;
 }
+
+@media all and (width < 800px) {
+  .hero {
+    padding: 32px;
+  }
+
+  .category-button {
+    padding: 8px 12px;
+  }
+
+  .list-news {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .list-aside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .aside-card {
+    grid-column: 1 / 3;
+  }
+}
+
+@media all and (width < 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .flex-item {
+    width: 100%;
+  }
+
+  .categorys {
+    display: none;
+  }
+}

@@ -13,7 +13,7 @@ main {
 .hero-content {
   display: flex;
   flex-direction: column;
-  gap: var(--s-l);
+  gap: 24px;
 }
 
 .hero-text {
@@ -76,7 +76,6 @@ main {
   display: flex;
   background-color: #563d7c;
   border-radius: 12px;
-  gap: 116px;
   padding: 24px;
   justify-content: space-between;
 }
@@ -97,4 +96,33 @@ main {
 
 .action-item {
   width: calc(100% / 3);
+}
+
+@media all and (width < 1040px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-img {
+    width: 100%;
+    order: 2;
+  }
+}
+
+@media all and (width < 800px) {
+  .featured {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+@media all and (width < 800px) {
+  .actions {
+    flex-direction: column;
+    gap: 48px;
+  }
 }

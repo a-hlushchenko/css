@@ -1,12 +1,14 @@
 <main>
 
 	<section>
+		{{#with hero}}
 		<div class="hero">
 			{{>hero data=hero}}
 			<div>
-				<a class="button" href="{{hero.button.url}}">{{hero.button.text}}</a>
+				<a class="button" href="{{button.url}}">{{button.text}}</a>
 			</div>
 		</div>
+		{{/with}}
 	</section>
 
 	<section>
