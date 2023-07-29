@@ -109,13 +109,14 @@ body {
     position: sticky;
     top: 0;
     z-index: 5;
+    height: fit-content;
   }
 
   .layout {
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
-    height: 100%;
+    height: fit-content;
   }
 
   .field {

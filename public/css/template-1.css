@@ -284,3 +284,8 @@ caption {
   background: #fff;
   scroll-snap-align: center;
 }
+
+.header-top {
+  position: sticky;
+  top: 0px;
+}
