@@ -461,7 +461,7 @@ footer {
 }
 
 @media all and (width < 1000px) {
-  .nav {
+  .header nav {
     display: none;
   }
 
