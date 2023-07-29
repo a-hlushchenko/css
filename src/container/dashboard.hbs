@@ -23,18 +23,19 @@
 		<aside class='page_aside aside grid grid-big'>
 			<div class='aside_logo'>Sidebar</div>
 			<nav class='aside_nav'>
-				<a href='#' class='nav-button nav-button--active text-white radius-small click'>
-					<img src='/svg/nav/home.svg' class='icon nav-button_icon' />
-					<span class='nav-button_text'>Home</span>
-				</a>
-				<a href='#' class='nav-button text-white radius-small click'>
+				{{#each header}}
+				{{#if navbuttonactive}}
+				<a href='{{url}}' class='nav-button nav-button--active text-white radius-small click'>
 					<img src='/svg/nav/orders.svg' class='icon nav-button_icon' />
-					<span class='nav-button_text'>Orders</span>
+					<span class='nav-button_text'>{{text}}</span>
 				</a>
-				<a href='#' class='nav-button text-white radius-small click'>
-					<img src='/svg/nav/products.svg' class='icon nav-button_icon' />
-					<span class='nav-button_text'>Products</span>
+				{{else}}
+				<a href='{{url}}' class='nav-button text-white radius-small click'>
+					<img src='/svg/nav/orders.svg' class='icon nav-button_icon' />
+					<span class='nav-button_text'>{{text}}</span>
 				</a>
+				{{/if}}
+				{{/each}}
 			</nav>
 		</aside>
 		<header class='header'>
@@ -53,6 +54,7 @@
 					<span class='icon header_icon-right click icon-button icon-yellow'
 						style='background-image: url(/svg/header/notify.svg)'></span>
 				</div>
+				{{>menu}}
 			</div>
 		</header>
 		<main>

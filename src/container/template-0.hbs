@@ -1,0 +1,67 @@
+<main>
+
+	<section>
+		{{>hero data=hero}}
+		<p class="test-text">
+			Lorem ipsum dolor,
+			sitametconsecteturadipisicing-elitExpeditadebitisaccu-santiumdoloresodio eaque necessitatibus
+			consequatur
+			ad doloribus? Nulla cupiditate
+			libero dolorum? Voluptatem sit
+			voluptas impedit temporibus
+			fugiat, iste sed.</p>
+	</section>
+
+	<section class="row plans">
+		{{#each plans}}
+		<div class="col plans-card">
+			{{>card}}
+		</div>
+		{{/each}}
+	</section>
+
+	<section>
+		<div class="tester">lorem good qwerty
+			<button class="tester2">button</button>
+		</div>
+	</section>
+
+	<section>
+		<table>
+			<caption>caption</caption>
+			<tbody>
+				{{#each footer}}
+				<tr>
+					{{#each links}}
+					<td>
+						{{text}}
+					</td>
+					{{/each}}
+					<td></td>
+				</tr>
+				{{/each}}
+			</tbody>
+		</table>
+	</section>
+
+	<section class="columns">
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quo magnam laborum placeat ipsum nostrum
+			explicabo voluptates veritatis sit, voluptatibus cumque sint repudiandae molestiae laboriosam perferendis
+			unde dignissimos expedita minima.</p>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quo magnam laborum placeat ipsum nostrum
+			explicabo voluptates veritatis sit, voluptatibus cumque sint repudiandae molestiae laboriosam perferendis
+			unde dignissimos expedita minima.</p>
+		<p class="test-col">paragraph s veritatis sit, voluptatibus cumque sint repudiandae molestiae laboriosam
+			perferendis
+			unde dignissimos expedita minim</p>
+	</section>
+
+	<section>
+		<div class="scroll">
+			<div class='scroll-item'>button</div>
+			<div class='scroll-item second'>button</div>
+			<div class='scroll-item'>button</div>
+		</div>
+	</section>
+
+</main>

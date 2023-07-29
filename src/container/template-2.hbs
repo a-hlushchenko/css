@@ -1,56 +1,48 @@
-<main>
+<main class="main">
 
-	<section>
-		{{#with hero}}
-		<div class="hero">
-			{{>hero data=hero}}
-			<div>
-				<a class="button" href="{{button.url}}">{{button.text}}</a>
-			</div>
-		</div>
-		{{/with}}
+	<section class="hero">
+		{{>hero text=info.description title=info.title}}
 	</section>
 
-	<section>
-		<div class="flex-container">
-			{{>preview}}
-		</div>
-	</section>
-
-	<section>
-
-		<div class="list-header">
-			<h2 class="list-title">List of posts</h2>
-			<div class="categorys">
-				{{#each categories}}
-				<button class="category-button">{{text}}</button>
-				{{/each}}
-			</div>
-		</div>
-
-		<div class="list-news">
-
-			<div class="list">
-				{{#each news}}
-				{{>post}}
-				{{/each}}
-			</div>
-
-			<aside class="list-aside">
-
-				<div class="aside-card">
-					<h3 class="aside-title">About</h3>
-					<p class="aside-card-text">{{about}}</p>
-				</div>
-
-				{{>link-list data=archive title='Archives'}}
-
-				{{>link-list data=social title='Social'}}
-
-			</aside>
-
-		</div>
-
-	</section>
+	{{>sign-form}}
 
 </main>
+
+{{#with updates}}
+<div class="updates">
+
+	<h3 class="updates-title">{{title}}</h3>
+
+	{{#each list}}
+	<div class="upd">
+		<img src="https://picsum.photos/32" alt="" class="upd-img">
+		<div class="upd-content">
+			<div class="upd-nickname">@{{nickname}}</div>
+			<p class="upd-description">{{description}}</p>
+		</div>
+	</div>
+	{{/each}}
+
+	<a href="{{show_all.url}}" class="updates-link">{{show_all.text}}</a>
+
+</div>
+{{/with}}
+
+{{#with experience}}
+<div class="experience">
+
+	<span class="experience-badge">{{badge}}</span>
+
+	<h2 class="experience-title">{{title}}</h2>
+
+	<div class="exps">
+		{{#each list}}
+		<div class="exp">
+			<strong class="exp-name">{{name}}</strong>
+			<p class="exp-details">{{details}}</p>
+		</div>
+		{{/each}}
+	</div>
+
+</div>
+{{/with}}

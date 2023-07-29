@@ -108,6 +108,7 @@ body {
     padding: 12px;
     position: sticky;
     top: 0;
+    z-index: 5;
   }
 
   .layout {
@@ -293,7 +294,7 @@ body {
 @layer mod {
   .page--dashboard {
     display: grid;
-    grid-template-columns: 7fr 41fr;
+    grid-template-columns: 220px 1fr;
     grid-template-rows: min-content 1fr;
   }
 
@@ -423,7 +424,7 @@ body {
 }
 
 @layer adaptive {
-  @media all and (width < 1180px) {
+  @media all and (width < 1260px) {
     .main {
       display: flex;
       flex-direction: column;
@@ -435,19 +436,18 @@ body {
     }
   }
 
-  @media all and (width < 1024px) {
+  @media all and (width < 1000px) {
     .purchase {
       grid-template-columns: 1fr 1fr;
     }
 
-    .aside,
-    .header {
-      display: none;
-    }
-
     .page--dashboard {
       display: flex;
-      justify-content: center;
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
     }
   }
 
@@ -466,4 +466,141 @@ body {
       flex-direction: column;
     }
   }
+}
+
+.radiox,
+.radioxx,
+.radioxxx {
+  display: none;
+}
+
+.radio-label {
+  background-color: white;
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.radio-label div {
+  height: 4px;
+  background-color: #333;
+  width: 20px;
+  border-radius: 2px;
+}
+
+.radio-label-2 {
+  background-color: #545454;
+  padding: 20px 10px;
+  border-radius: 12px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.radio-label-2 > div {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.radio-label-2 div:first-child {
+  transform: rotate(45deg);
+  position: relative;
+  top: 4px;
+}
+
+.radio-label-2 div:last-child {
+  transform: rotate(135deg);
+}
+
+.radio-label-3 {
+  display: block;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  height: 0px;
+  z-index: 100;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  justify-content: start;
+  justify-items: stretch;
+  align-items: start;
+  position: fixed;
+  left: -100%;
+  padding: 80px 24px;
+  top: 0px;
+  z-index: 100;
+  width: 250px;
+  height: 100%;
+  transition: left 0.7s;
+  background-color: var(--col-dark);
+}
+
+.menu .pagelist {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 12px;
+  width: 100%;
+}
+
+.menu .pagelist .pagef {
+  background-color: #e7e7e7a3;
+  padding: 6px 8px;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.radiox:checked ~ .menu {
+  left: 0px;
+  padding: 48px 24px;
+}
+
+.radiox:checked ~ .radio-label-3 {
+  height: 100%;
+  width: calc(100% - 250px);
+}
+
+.nav-button {
+  font-size: 20px;
+  padding: 8px;
+  width: 100%;
+}
+
+@media all and (width >= 1000px) {
+  .sticky {
+    display: none;
+  }
+}
+
+@media all and (width < 1000px) {
+  .nav {
+    display: none;
+  }
+
+  .page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header_icons {
+    display: none;
+  }
+
+  .aside {
+    display: none;
+  }
+}
+
+.radio-label {
+  cursor: pointer;
 }
