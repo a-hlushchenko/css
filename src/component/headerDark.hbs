@@ -7,6 +7,7 @@
 			<a class='header-link' href="{{url}}">{{text}}</a>
 			{{/each}}
 		</nav>
+		{{>menu header = links}}
 	</div>
 	<div class="header-bottom">
 		<div class="header-ad">
@@ -15,5 +16,6 @@
 		</div>
 		<div class="header-online">Users online: {{userOnline}}</div>
 	</div>
+
 </header>
 {{/with}}
