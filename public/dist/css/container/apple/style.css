@@ -445,9 +445,6 @@
   .product-description {
     font-size: 24px;
   }
-  .header-content {
-    flex-direction: column;
-  }
 }
 
 .ad-container {
